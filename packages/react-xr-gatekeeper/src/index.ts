@@ -1,2 +1,2 @@
-export { useXRGatekeeper } from "./useXRGatekeeper";
+export { useXRGatekeeper, type XRSupportStatus } from "./useXRGatekeeper";
 export { XRGatekeeper, type XRGatekeeperProps } from "./XRGatekeeper";
