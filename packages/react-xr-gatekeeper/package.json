@@ -7,7 +7,11 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup",
-    "dev": "tsup --watch"
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "type-check": "tsc --noEmit"
   },
   "keywords": ["react", "webxr", "vr", "gatekeeper", "hooks"],
   "author": "WebXR Gatekeeper",
@@ -16,9 +20,16 @@
     "react": ">=16.8.0"
   },
   "devDependencies": {
-    "react": "^18.2.0",
-    "tsup": "^8.0.0",
-    "typescript": "^5.0.0",
-    "@types/react": "^18.2.0"
+    "react": "catalog:",
+    "tsup": "catalog:",
+    "typescript": "catalog:",
+    "@types/react": "catalog:",
+    "@types/webxr": "catalog:",
+    "vitest": "catalog:",
+    "@vitest/coverage-v8": "catalog:",
+    "@testing-library/react": "catalog:",
+    "@testing-library/jest-dom": "catalog:",
+    "@testing-library/user-event": "catalog:",
+    "jsdom": "catalog:"
   }
 }
