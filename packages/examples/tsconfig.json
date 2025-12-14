@@ -17,9 +17,13 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true,
-    "verbatimModuleSyntax": true
+    "verbatimModuleSyntax": true,
+    "baseUrl": ".",
+    "paths": {
+      "react-xr-gatekeeper": ["../react-xr-gatekeeper/src/index.ts"]
+    }
   },
-  "include": ["src"],
+  "include": ["src", "../react-xr-gatekeeper/src/types.d.ts"],
   "references": [
     {
       "path": "./tsconfig.node.json"
