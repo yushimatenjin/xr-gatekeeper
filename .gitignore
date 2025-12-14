@@ -4,3 +4,7 @@ dist
 .DS_Store
 *.log
 .biome
+.specstory
+coverage
+*.tsbuildinfo
+.vitest
